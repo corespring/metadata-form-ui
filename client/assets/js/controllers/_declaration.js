@@ -1,0 +1,1 @@
+angular.module('metadata-form-ui.controllers', ['cs.directives']);

@@ -1,0 +1,13 @@
+{
+  "name": "metadata-form-ui-client",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular-unstable": "~1.1.5",
+    "underscore": "latest",
+    "jquery": "latest",
+    "angular-ui": "latest",
+    "bootstrap": "latest",
+    "components-font-awesome": "~3.1.0",
+    "corespring-ng-components": "git://github.com/corespring/corespring-ng-components.git"
+  }
+}

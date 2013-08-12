@@ -1,0 +1,35 @@
+{
+  "author": "CoreSpring",
+  "name": "metadata-form-ui",
+  "version": "0.0.1",
+  "homepage" : "http://github.com/corespring/metadata-form-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corespring/metadata-form-ui.git"
+  },
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "connect-assets": "2.5.0",
+    "less": "*",
+    "underscore": "*",
+    "nconf": "*",
+    "bower": "1.1.2",
+    "grunt": "*",
+    "grunt-cli": "*"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "prepublish": "echo prepublish; ./prepublish",
+    "test": "grunt test --verbose"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-shell": "0.3.1",
+    "grunt-contrib-jshint": "~0.5.4"
+  }
+}

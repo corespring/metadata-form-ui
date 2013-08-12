@@ -1,0 +1,66 @@
+@grey: #8a8d8e;
+@green: #92d300;
+@bar-height: 40px;
+
+.main-content{
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  .form-control{
+    width: 100%;
+  }
+  input{
+    margin-right: 100px;
+  }
+
+  .icon-remove-circle{
+    font-size: 20px;
+    color: #d9534f;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+
+  .value-label{
+    padding-top: 6px;
+  }
+
+  .control-label{
+    font-weight: normal;
+    color: lighten(black, 50%);
+  }
+
+  .custom-enter,
+  .custom-leave,
+  .custom-move {
+    -webkit-transition: 300ms linear all;
+    -moz-transition: 300ms linear all;
+    -o-transition: 300ms linear all;
+    transition: 300ms linear all;
+    position:relative;
+  }
+
+  .custom-enter {
+    opacity:0;
+  }
+  .custom-enter.custom-enter-active {
+    left:0;
+    opacity:1;
+  }
+
+  .custom-leave {
+    left:0;
+    opacity:1;
+  }
+  .custom-leave.custom-leave-active {
+    opacity:0;
+  }
+
+  .custom-move {
+    opacity:0.5;
+  }
+  .custom-move.custom-move-active {
+    opacity:1;
+  }
+
+}

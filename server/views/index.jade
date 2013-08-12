@@ -1,0 +1,41 @@
+extends layout
+
+block head
+  != css("app")
+
+block content
+  .root(ng-app="metadata-form-ui", ng-controller="Root")
+    .main-content
+
+      br/
+      br/
+
+      form.form-horizontal
+        .form-group(ng-repeat="m in metadata", data-ng-animate="'custom'")
+          label.col-lg-2.control-label( content-editable, event-type="ALL", remove-focus-after-edit="false", ng-model="m.key") {{m.key}}
+          .col-lg-10
+            label.value-label.col-lg-8(ng-model="m.value", content-editable, remove-focus-after-edit="false", event-type="ALL") {{m.value}}
+            i.icon-remove-circle(ng-click="remove(m)")
+        .form-group
+          label.col-lg-2.control-label &nbsp;
+          .col-lg-8
+            button.btn.btn-success.btn-sm(type="submit", ng-click="addRow()") Add
+            | &nbsp;
+            button.btn.btn-lg(type="submit", ng-click="save()") Save
+
+block scripts
+  != js("app")
+
+  script(type="text/javascript", src="#{corespringUrl}/assets/js/corespring/metadata/bridge.js")
+
+  //Note: corespring-ng-services requires that you create a service called 'CorespringConfig'
+  //That contains one property: url
+  script(type="text/javascript")
+
+    angular.module('metadata-form-ui')
+      .factory('CorespringConfig', [function (){
+         return {
+           url: "#{corespringUrl}",
+           projectHomepage: "#{projectHomepage}"
+         }
+    }]);
