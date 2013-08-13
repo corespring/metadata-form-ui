@@ -1,25 +1,18 @@
-# Developer Toolkit
+# Metadata Form UI
 
-
-[![Build Status](https://travis-ci.org/corespring/developer-toolkit.png)](https://travis-ci.org/corespring/developer-toolkit)
-
-
-This application will allow developers to launch corespring items and get the source code that was used to launch the item.
-
-See: [this mockup](https://www.easel.io/documents/f815298729882407?mode=preview#f815298729882407)
-
+A simple application showing how to create your own metadata form for the CoreSpring content editor.
 
 ## Building
 
 We assume you have node/npm & bower installed
-    
+
     npm install
     ./prepublish
     node app.js
-    
+
 ## Pointing the app to corespring.org
 
 You'll need to specify the corespring url as an env var.
 
     export CORESPRING_URL="https://corespring.org"
-    
+

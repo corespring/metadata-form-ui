@@ -1,5 +1,3 @@
-require('coffee-script');
-
 var config = require('../config');
 
 exports.init = function (app, packageJson) {
