@@ -16,7 +16,12 @@
     "nconf": "*",
     "bower": "1.1.2",
     "grunt": "*",
-    "grunt-cli": "*"
+    "grunt-cli": "*",
+     "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-shell": "0.3.1",
+    "grunt-contrib-jshint": "~0.5.4"
   },
   "engines": {
     "node": ">= 0.6.0"
@@ -24,12 +29,5 @@
   "scripts": {
     "prepublish": "echo prepublish; ./prepublish",
     "test": "grunt test --verbose"
-  },
-  "devDependencies": {
-    "grunt-contrib-clean": "~0.4.1",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-coffee": "~0.7.0",
-    "grunt-shell": "0.3.1",
-    "grunt-contrib-jshint": "~0.5.4"
   }
 }
