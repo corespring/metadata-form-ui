@@ -12,7 +12,6 @@ $(document).ready(function(){
         "Family" : $("#family").val(),
         "Master Question" : $("#masterQuestion").val()
       }
-      console.log(data);
       com.corespring.metadataBridge.updateMetadata(data);
   });
 });
