@@ -17,7 +17,8 @@ angular.module('metadata-form-ui.controllers')
       if(!$scope.$$phase) {
 
         $scope.$apply(function(){
-          $scope.metadata = toKeyValues(metadata);
+          $scope.lockFields = metadata.lockFields;
+          $scope.metadata = toKeyValues(metadata.data);
         });
       }
     });
