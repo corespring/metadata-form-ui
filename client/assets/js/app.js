@@ -3,6 +3,7 @@
 //= require "bower_components/bootstrap/dist/js/bootstrap"
 //= require "bower_components/underscore/underscore"
 //= require "bower_components/angular-ui/build/angular-ui"
+//= require "bower_components/corespring-ng-components/build/corespring-ng-components"
 
 
 
