@@ -15,7 +15,7 @@ block content
           label.col-lg-2.control-label( content-editable, event-type="ALL", remove-focus-after-edit="false", ng-model="m.key") {{m.key}}
           .col-lg-10
             label.value-label.col-lg-8(ng-model="m.value", content-editable, remove-focus-after-edit="false", event-type="ALL") {{m.value}}
-            i.icon-remove-circle( ng-visible="!lockFields" ng-click="remove(m)")
+            i.icon-remove-circle( ng-visible="!lockFields", ng-click="remove(m)")
         .form-group
           label.col-lg-2.control-label &nbsp;
           .col-lg-8
