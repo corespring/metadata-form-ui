@@ -1,16 +1,22 @@
 $(document).ready(function(){
 
   com.corespring.metadataBridge.requestMetadata(function (metadata) {
-     $("#skillNumber").attr('value', metadata.data["Skill Number"]);
-     $("#family").attr('value', metadata.data["Family"]);
-     $("#masterQuestion").attr('value', metadata.data["Master Question"]);
+
+     if(!metadata){
+      return;
+     }
+
+     $("#skillNumber").attr('value', metadata["skillNumber"]);
+     $("#family").attr('value', metadata["family"]);
+     $("#masterQuestion").attr('value', metadata["masterQuestion"]);
   });
+
 
   $("#saveButton").click(function(){
       var data = {
-        "Skill Number" : $("#skillNumber").val(),
-        "Family" : $("#family").val(),
-        "Master Question" : $("#masterQuestion").val()
+        "skillNumber" : $("#skillNumber").val(),
+        "family" : $("#family").val(),
+        "masterQuestion" : $("#masterQuestion").val()
       }
       com.corespring.metadataBridge.updateMetadata(data);
   });
