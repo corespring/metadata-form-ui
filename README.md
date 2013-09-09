@@ -15,4 +15,7 @@ We assume you have node/npm & bower installed
 You'll need to specify the corespring url as an env var.
 
     export CORESPRING_URL="https://corespring.org"
+    
+##Hosting
+Currently hosted at http://metadata-form-ui-v2.herokuapp.com
 
