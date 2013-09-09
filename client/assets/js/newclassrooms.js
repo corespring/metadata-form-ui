@@ -9,6 +9,7 @@ $(document).ready(function(){
      $("#skillNumber").attr('value', metadata["skillNumber"]);
      $("#family").attr('value', metadata["family"]);
      $("#masterQuestion").attr('value', metadata["masterQuestion"]);
+     $("#credits").attr('value',metadata["credtits"])
   });
 
 
@@ -16,7 +17,8 @@ $(document).ready(function(){
       var data = {
         "skillNumber" : $("#skillNumber").val(),
         "family" : $("#family").val(),
-        "masterQuestion" : $("#masterQuestion").val()
+        "masterQuestion" : $("#masterQuestion").val(),
+        "credits" : $("#credits").val()
       }
       com.corespring.metadataBridge.updateMetadata(data);
   });
