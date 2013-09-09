@@ -9,7 +9,7 @@ $(document).ready(function(){
      $("#skillNumber").attr('value', metadata["skillNumber"]);
      $("#family").attr('value', metadata["family"]);
      $("#masterQuestion").attr('value', metadata["masterQuestion"]);
-     $("#credits").attr('value',metadata["credtits"])
+     $("#credits").attr('value',metadata["credits"]);
   });
 
 
